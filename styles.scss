@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700');
 
 $profileBg: #fff;
 $skillsBg: #3d3e42;
@@ -8,7 +8,6 @@ $skillsColor: #9099a0;
 $linkColor: #46b8cb;
 $boldColor: #4a4e51;
 $time: 0.6s;
-
 
 @mixin breakpoint($point) {
   @if $point == papa-bear {
@@ -268,8 +267,12 @@ a {
 
   .experience-title {
     color: white;
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
   }
+}
+
+.company-wrapper .experience-title {
+  font-weight: 500;
 }
 
 .section-padding {
@@ -342,4 +345,12 @@ $md-chip-color: $linkColor;
   border-radius: 32px;
   font-size: 13px;
   color: #fff;
+}
+
+.fa-solid {
+  margin-right: 5px;
+}
+
+.time {
+  font-size: 14px;
 }
